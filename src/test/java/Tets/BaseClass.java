@@ -11,7 +11,7 @@ public class BaseClass {
 	WebDriver driver;
 	public void base() {
 		WebDriverManager.chromedriver().setup();
-	    driver = new ChromeDriver();
+	   // driver = new ChromeDriver();
 	        ChromeOptions options = new ChromeOptions();
 	        options.addArguments("--headless");                  // Run headless
 	        options.addArguments("--no-sandbox");               // Required for Linux
