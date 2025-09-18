@@ -6,7 +6,6 @@
       <class name="Tets.BaseClass">
         <methods>
           <include name="getUrl"/>
-          <include name="base"/>
         </methods>
       </class> <!-- Tets.BaseClass -->
     </classes>

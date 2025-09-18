@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-19T01:08:11 IST" name="Default suite" finished-at="2025-09-19T01:08:15 IST" duration-ms="3299">
+  <suite started-at="2025-09-19T01:19:07 IST" name="Default suite" finished-at="2025-09-19T01:19:11 IST" duration-ms="3692">
     <groups>
     </groups>
-    <test started-at="2025-09-19T01:08:11 IST" name="Default test" finished-at="2025-09-19T01:08:15 IST" duration-ms="3299">
+    <test started-at="2025-09-19T01:19:07 IST" name="Default test" finished-at="2025-09-19T01:19:11 IST" duration-ms="3692">
       <class name="Tets.BaseClass">
-        <test-method signature="base()[pri:0, instance:Tets.BaseClass@2af004b]" started-at="2025-09-19T01:08:11 IST" name="base" finished-at="2025-09-19T01:08:14 IST" duration-ms="2483" status="PASS">
+        <test-method signature="base()[pri:0, instance:Tets.BaseClass@2af004b]" started-at="2025-09-19T01:19:07 IST" name="base" finished-at="2025-09-19T01:19:10 IST" duration-ms="2460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- base -->
-        <test-method signature="getUrl()[pri:0, instance:Tets.BaseClass@2af004b]" started-at="2025-09-19T01:08:14 IST" name="getUrl" finished-at="2025-09-19T01:08:15 IST" duration-ms="753" status="PASS">
+        <test-method signature="getUrl()[pri:0, instance:Tets.BaseClass@2af004b]" started-at="2025-09-19T01:19:10 IST" name="getUrl" finished-at="2025-09-19T01:19:11 IST" duration-ms="1165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
