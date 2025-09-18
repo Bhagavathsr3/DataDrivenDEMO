@@ -11,16 +11,15 @@ public class BaseClass {
 	WebDriver driver;
 	public void base() {
 		WebDriverManager.chromedriver().setup();
-	    driver = new ChromeDriver();
-	        ChromeOptions options = new ChromeOptions();
-	        options.addArguments("--headless");                  // Run headless
-	        options.addArguments("--no-sandbox");               // Required for Linux
-	        options.addArguments("--disable-dev-shm-usage");    // Avoid shared memory issues
-	        options.addArguments("--remote-allow-origins=*");   // For Selenium 4+
-	        options.addArguments("--disable-gpu");              // Optional
-	        options.addArguments("--user-data-dir=/tmp/chrome"); // Unique temp user data dir
-
-	        driver = new ChromeDriver(options);
+	   // driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless=new");       // headless mode
+		options.addArguments("--disable-gpu");
+		options.addArguments("--disable-software-rasterizer");
+		options.addArguments("--window-size=1920,1080");
+		options.addArguments("--remote-allow-origins=*");
+		options.addArguments("--user-data-dir=C:/Temp/chrome"); // Windows temp dir
+		driver = new ChromeDriver(options);
 	}
 	
 	public void getUrl() {
