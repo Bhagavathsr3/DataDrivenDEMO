@@ -21,6 +21,8 @@ public class BaseClass {
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
             options.addArguments("--disable-gpu");
+            options.addArguments("--remote-debugging-port=9222"); // 🔑 important
+            options.addArguments("--disable-software-rasterizer"); // 🔑 fix for renderer
             options.addArguments("--window-size=1920,1080");
         } else if (os.contains("win")) {
             // Options for Windows local runs
