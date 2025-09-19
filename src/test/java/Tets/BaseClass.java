@@ -10,23 +10,6 @@ import org.testng.annotations.Test;
 public class BaseClass {
     public static WebDriver driver;
 
-<<<<<<< HEAD
-	  
-	       ChromeOptions options = new ChromeOptions();
-options.addArguments("--headless=new");          // Headless mode for EC2
-options.addArguments("--no-sandbox");            // Required in CI/CD
-options.addArguments("--disable-dev-shm-usage"); // Avoids /dev/shm issues
-options.addArguments("--disable-gpu");           // Disable GPU for headless
-options.addArguments("--remote-debugging-port=9222"); // Fix DevToolsActivePort
-options.addArguments("--window-size=1920,1080"); // Ensure screen size
-		 driver = new ChromeDriver(options);
-	}
-	
-	public void getUrl() {
-		driver.get("https://www.facebook.com/");
-	}
-}
-=======
     @Test
     public void base() {
         ChromeOptions options = new ChromeOptions();
@@ -65,4 +48,3 @@ options.addArguments("--window-size=1920,1080"); // Ensure screen size
         }
     }
 }
->>>>>>> ddefc74 (ooo)
