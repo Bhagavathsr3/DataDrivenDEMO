@@ -7,13 +7,16 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
     public static WebDriver driver;
 
     @Test
     public void base() {
+    	WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-
+        
         String os = System.getProperty("os.name").toLowerCase();
         if (os.contains("linux") || os.contains("unix")) {
             // Options for headless Linux (EC2, Jenkins)
