@@ -20,6 +20,7 @@ options.addArguments("--disable-dev-shm-usage"); // Avoids /dev/shm issues
 options.addArguments("--disable-gpu");           // Disable GPU for headless
 options.addArguments("--remote-debugging-port=9222"); // Fix DevToolsActivePort
 options.addArguments("--window-size=1920,1080"); // Ensure screen size
+		 driver = new ChromeDriver(options);
 	}
 	
 	public void getUrl() {
