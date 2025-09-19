@@ -5,6 +5,7 @@
     <classes>
       <class name="Tets.BaseClass">
         <methods>
+          <include name="tearDown"/>
           <include name="getUrl"/>
         </methods>
       </class> <!-- Tets.BaseClass -->

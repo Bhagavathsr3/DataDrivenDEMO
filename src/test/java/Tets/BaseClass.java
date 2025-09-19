@@ -3,15 +3,14 @@ package Tets;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-@Test
 public class BaseClass {
-	WebDriver driver;
-	public void base() {
-		WebDriverManager.chromedriver().setup();
+    public static WebDriver driver;
 
+<<<<<<< HEAD
 	  
 	       ChromeOptions options = new ChromeOptions();
 options.addArguments("--headless=new");          // Headless mode for EC2
@@ -27,3 +26,43 @@ options.addArguments("--window-size=1920,1080"); // Ensure screen size
 		driver.get("https://www.facebook.com/");
 	}
 }
+=======
+    @Test
+    public void base() {
+        ChromeOptions options = new ChromeOptions();
+
+        String os = System.getProperty("os.name").toLowerCase();
+        if (os.contains("linux") || os.contains("unix")) {
+            // Options for headless Linux (EC2, Jenkins)
+            options.addArguments("--headless=new");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--window-size=1920,1080");
+        } else if (os.contains("win")) {
+            // Options for Windows local runs
+            options.addArguments("--headless=new");
+            options.addArguments("--window-size=1920,1080");
+        }
+
+        System.out.println("OS Detected: " + os);
+        System.out.println("Running Chrome with options: " + options.toString());
+
+        // ✅ Initialize the driver here
+        driver = new ChromeDriver(options);
+    }
+
+    @Test
+    public void getUrl() {
+        driver.get("https://www.google.com");
+        System.out.println("Page title is: " + driver.getTitle());
+    }
+
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+}
+>>>>>>> ddefc74 (ooo)

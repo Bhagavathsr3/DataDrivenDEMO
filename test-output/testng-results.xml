@@ -2,19 +2,23 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-19T01:19:07 IST" name="Default suite" finished-at="2025-09-19T01:19:11 IST" duration-ms="3692">
+  <suite started-at="2025-09-19T11:26:09 IST" name="Default suite" finished-at="2025-09-19T11:26:13 IST" duration-ms="3986">
     <groups>
     </groups>
-    <test started-at="2025-09-19T01:19:07 IST" name="Default test" finished-at="2025-09-19T01:19:11 IST" duration-ms="3692">
+    <test started-at="2025-09-19T11:26:09 IST" name="Default test" finished-at="2025-09-19T11:26:13 IST" duration-ms="3986">
       <class name="Tets.BaseClass">
-        <test-method signature="base()[pri:0, instance:Tets.BaseClass@2af004b]" started-at="2025-09-19T01:19:07 IST" name="base" finished-at="2025-09-19T01:19:10 IST" duration-ms="2460" status="PASS">
+        <test-method signature="base()[pri:0, instance:Tets.BaseClass@202b0582]" started-at="2025-09-19T11:26:09 IST" name="base" finished-at="2025-09-19T11:26:11 IST" duration-ms="2179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- base -->
-        <test-method signature="getUrl()[pri:0, instance:Tets.BaseClass@2af004b]" started-at="2025-09-19T01:19:10 IST" name="getUrl" finished-at="2025-09-19T01:19:11 IST" duration-ms="1165" status="PASS">
+        <test-method signature="getUrl()[pri:0, instance:Tets.BaseClass@202b0582]" started-at="2025-09-19T11:26:11 IST" name="getUrl" finished-at="2025-09-19T11:26:13 IST" duration-ms="1552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tets.BaseClass@202b0582]" started-at="2025-09-19T11:26:13 IST" name="tearDown" finished-at="2025-09-19T11:26:13 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- Tets.BaseClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
