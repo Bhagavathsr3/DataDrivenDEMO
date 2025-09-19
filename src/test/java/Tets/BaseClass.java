@@ -13,13 +13,13 @@ public class BaseClass {
 		WebDriverManager.chromedriver().setup();
 
 	  
-	        ChromeOptions options = new ChromeOptions();
-	        options.addArguments("--headless=new");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--disable-gpu"); // Optional
-            options.addArguments("--window-size=1920,1080");
-            driver = new ChromeDriver(options);
+	       ChromeOptions options = new ChromeOptions();
+options.addArguments("--headless=new");          // Headless mode for EC2
+options.addArguments("--no-sandbox");            // Required in CI/CD
+options.addArguments("--disable-dev-shm-usage"); // Avoids /dev/shm issues
+options.addArguments("--disable-gpu");           // Disable GPU for headless
+options.addArguments("--remote-debugging-port=9222"); // Fix DevToolsActivePort
+options.addArguments("--window-size=1920,1080"); // Ensure screen size
 	}
 	
 	public void getUrl() {
